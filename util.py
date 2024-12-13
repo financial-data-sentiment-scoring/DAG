@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import http.client
 import json
+# API key removed from public repo
 API_KEY = ''
 def get_article_html(url):
 
