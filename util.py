@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import http.client
 import json
-
+API_KEY = ''
 def get_article_html(url):
 
     conn = http.client.HTTPSConnection("scrapeninja.p.rapidapi.com")
@@ -9,7 +9,7 @@ def get_article_html(url):
     payload = {"url": url}
 
     headers = {
-        'x-rapidapi-key': "74d0bd5461msh5dc3158a93ead07p1a75e2jsn49ca31ce154b",
+        'x-rapidapi-key': API_KEY,
         'x-rapidapi-host': "scrapeninja.p.rapidapi.com",
         'Content-Type': "application/json"
     }
